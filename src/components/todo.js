@@ -8,6 +8,7 @@ let header = document.getElementById('header');
 let form = document.getElementById('todoForm');
 let newItem = document.getElementById('item');
 
+//For Form part
 form.addEventListener('submit', handleSubmit);
 itemsContainer.addEventListener('click', toggleComplete);
 
@@ -17,7 +18,7 @@ let itemsTemplate = Handlebars.compile(itemsSource);
 let headerSource   = document.getElementById('header-template').innerHTML;
 let headerTemplate = Handlebars.compile(headerSource);
 
-
+//For item.js 
 function Item(text) {
   this.text = text;
   this.id = Math.random();
@@ -49,7 +50,7 @@ function handleSubmit(e) {
   e.target.reset();
   drawItems();
 }
-
+//For List.js
 function toggleComplete(e) {
   let id = parseFloat(e.target.id);
 
