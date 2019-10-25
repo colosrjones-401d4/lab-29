@@ -1,8 +1,21 @@
 import React from "react";
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    return <h3>{this.props.title}</h3>;
+    return (
+      <>
+        <header id="header">
+          <h2>
+            There are <span id="itemCount">{this.props.length}</span> Items to
+            Complete
+          </h2>
+        </header>
+      </>
+    );
   }
 }
 

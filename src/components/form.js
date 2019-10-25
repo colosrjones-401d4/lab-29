@@ -1,26 +1,55 @@
-import React from 'react';
+import React from "react";
 
 class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       input: undefined,
+      assigned: undefined,
+      dueDate: undefined
     };
   }
-  handerData = e => {
-    e.preventDefault();
-    this.props.add(this.state.input);
+
+  inputItem = e => {
+    this.setState({ input: e.target.value });
   };
 
-  handleInput = e => {
-    this.setState = ({ input: e.target.value });
+  inputAssigned = e => {
+    console.log(`Assigned: ${e.target.value}`);
+    this.setState({ assigned: e.target.value });
+  };
+
+  inputDate = e => {
+    console.log(`Assigned: ${e.target.value}`);
+    this.setState({ dueDate: e.target.value });
+  };
+
+  submitData = e => {
+    e.preventDefault();
+    console.log(this.state);
+    this.props.add(this.state.input, this.state.assigned, this.state.dueDate);
   };
 
   render() {
     return (
-      <form onSubmit={this.HandlerData}>
-        <input onChange={this.handleInput} /> Add New Item
-      </form>
+      <>
+        <div>
+          <form onSubmit={this.submitData} id="todoForm">
+            <input
+              id="item"
+              placeholder="Add To Do List Item"
+              onChange={this.inputItem}
+            ></input>
+            <input
+              id="assigned"
+              placeholder="Assigned to"
+              onChange={this.inputAssigned}
+            ></input>
+            <input id="date" type="date" onChange={this.inputDate}></input>
+            <input id="submit" type="submit"></input>
+          </form>
+        </div>
+      </>
     );
   }
 }
