@@ -2,8 +2,8 @@
 
 ## Links
 [Pull Request](https://github.com/colosrjones-401d4/lab-29/pull/1)
-[Travis](https://www.travis-ci.com/)
-[Netlify](https://)
+[![Build Status](https://travis-ci.org/colosrjones-401d4/lab-29.svg?branch=master)](https://travis-ci.org/colosrjones-401d4/lab-29)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc70a616-4954-4454-828e-2636867288a8/deploy-status)](https://app.netlify.com/sites/optimistic-lumiere-dd7234/deploys)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
