@@ -1,10 +1,11 @@
 {
   "name": "class-29-starter-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "lab-29",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "node-sass": "^4.13.0",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-scripts": "^3.2.0"
@@ -21,5 +22,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colosrjones-401d4/lab-29.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colosrjones-401d4/lab-29/issues"
+  }
 }
