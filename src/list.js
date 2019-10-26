@@ -1,6 +1,6 @@
 import React from "react";
 import { If } from "./if";
-import Modal from "./modal";
+import Modal from "./Modal/modal";
 
 class List extends React.Component {
   constructor(props) {

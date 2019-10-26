@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/header";
-import List from "./components/list";
-import Form from "./components/form";
-import Item from "./components/item";
+import Header from "./header";
+import List from "./list";
+import Form from "./form";
+import Item from "./items";
 import "./reset.scss";
 import "./todo.scss";
 
